@@ -1,0 +1,87 @@
+/* Body styles: Set base font, remove default margin/padding, set background color */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+/* Navigation bar styles: Fixed top, dark background, right-aligned links
+   Added right-side padding for extra space */
+#navbar {
+    top : 0;
+    background-color: #333;
+    padding: 10px 70px 10px 10px; /* top right bottom left */
+    color: white;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    font-size: 18px;
+}
+
+/* It contains links to different sections of the website. 
+it is styled to have a dark background, white text, and a right-aligned layout. */
+/* Navigation links: White text, spacing between links */
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    margin-right: 20px;
+}
+
+/* Home section: Centered text, spacing from navbar, bottom border */
+#home {
+    background-color: #f4f4f4;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+/* Footer: Fixed bottom, dark background, centered text */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/*
+Container: Flexbox layout for main sections (Projects, Experience, Skills)
+Displays sections horizontally on desktop, stacks vertically on mobile
+*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+/* Responsive: Stack sections vertically on screens smaller than 900px */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/*
+Container2: Example of another flexbox container with extra styling
+Not used in main layout, but available for future sections
+*/
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.container2 section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
