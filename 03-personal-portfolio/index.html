@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A basic HTML website for showcasing projects and skills.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Development,2025">
+    <title>Basic HTML Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!--
+        Header section contains the navigation bar for the website.
+        The navbar uses flexbox for horizontal layout and spacing.
+        The right side space is added via CSS for better appearance.
+    -->
+    <header>
+        <nav id="navbar">
+            <!-- Navigation links to different sections of the page -->
+            <a href="#home">Home</a>
+            <a href="#about">About</a> 
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <!-- Theme toggle button: keyboard accessible and shows current state via aria-pressed -->
+            <button id="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">
+                <img src="image/dark-mode.png" alt="Toggle theme" id="icon">
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to My Portfolio Website</h1>
+            <p>This website showcases my projects and skills in web development.</p>
+        </section>
+        <div class="imageContainer">
+            <img src="image/man.jpeg" alt="" id="man">
+        </div>
+        <div class="container">
+            <section id="projects">
+                <h2>Projects</h2>
+                <ul>
+                    <li>E-commerce Site</li>
+                    <li>Blog Platform</li>
+                    <li>Weather App</li>
+                    <li>Task Manager</li>
+                    <li>Chat Application</li>
+                </ul>
+            </section>
+            <section id="experience">
+                <h2>Experience</h2>
+                <p>I have worked on various projects using HTML, CSS, and JavaScript. My experience includes developing responsive websites, implementing user interfaces, and optimizing web performance.</p>
+                <div id="openSource">
+                    <h3>Open Source Contributions</h3>
+                    <p>I have contributed to several open source projects, enhancing my skills and collaborating with other developers.</p>
+                </div>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <p>I hold a Bachelor of Science in Computer Science from Your University, where I gained a solid foundation in programming and web development.</p>
+                <h3>Course I took</h3> 
+                <ul>
+                    <li>Object oriented programming</li>
+                    <li>Web Engineering</li>
+                    <li>Human Computer</li>
+                </ul>
+            </section>
+        </div>
+    </main>    
+    <script src="script.js"></script>
+</body>
+</html>
