@@ -1,0 +1,108 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-image: url('image/space.png');
+    background-size: cover;          /* or contain/100% 100% */
+    background-position: center;     /* centers the image */
+    background-repeat: no-repeat;    /* prevents tiling */
+    background-attachment: fixed;    /* keeps image fixed while scrolling */
+}
+
+.datepicker {
+    position: relative;
+    display: inline-block;
+    margin-top: 20vh;
+    margin-left: 80vh;
+}
+
+.input-date {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    padding: 5px;
+    width: 250px;
+    border-radius: 5px;
+}
+.input-date img {
+    height: 30px;
+    width: 30px;
+}
+.input-date input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px;
+}
+.input-date button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.calendar {
+    position: absolute;
+    top: 50px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+}
+.calender-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
+
+.calender-header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.calender-header img {
+    height: 20px;
+    width: 20px;
+}
+.calender-body {
+    padding: 10px;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.days span {
+    width : 30px;
+    text-align: center;
+    font-weight: bolder;
+    color: #555;
+}
+
+.date {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.date span {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.date span:hover {
+    background-color: #eee;
+    border-radius: 50%;
+}
