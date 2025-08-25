@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* Main container */
+.testimonial-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Top row - two testimonials side by side */
+.top-row {
+  display: flex;
+  gap: 20px;
+}
+
+/* Individual testimonial cards */
+.testimonial-card {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  position: relative;
+}
+
+/* Dark theme card */
+.testimonial-dark {
+  background: #2d2d2d;
+  color: white;
+}
+
+/* Speech bubble effect */
+.testimonial-card::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 10px solid white;
+}
+
+.testimonial-dark::before {
+  border-top-color: #2d2d2d;
+}
+
+/* Text content */
+.testimonial-content p {
+  margin-bottom: 15px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.testimonial-content a {
+  color: #4facfe;
+  text-decoration: none;
+}
+
+.testimonial-content a:hover {
+  text-decoration: underline;
+}
+
+/* User info section */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-name h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.user-name p {
+  font-size: 14px;
+  color: #666;
+}
+
+.testimonial-dark .user-name p {
+  color: #ccc;
+}
+
+/* Middle row with profile image and testimonial */
+.middle-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.middle-testimonial {
+  flex: 2;
+  background: #2d2d2d;
+  color: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Stars */
+.stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 15px;
+}
+
+.star {
+  color: #ffd700;
+  font-size: 20px;
+}
+
+.middle-testimonial h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.middle-testimonial .role {
+  color: #999;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.middle-testimonial p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Bottom testimonial */
+.bottom-testimonial {
+  background: white;
+  border-radius: 15px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bottom-testimonial p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.nav-arrow {
+  background: #f0f0f0;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+  transition: background-color 0.3s ease;
+}
+
+.nav-arrow:hover {
+  background: #e0e0e0;
+}
+
+.nav-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-avatar.active {
+  opacity: 1;
+  border: 3px solid #4facfe;
+  transform: scale(1.1);
+}
+
+.bottom-testimonial h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .top-row {
+    flex-direction: column;
+  }
+
+  .middle-row {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  .testimonial-main {
+    padding: 0 10px;
+  }
+
+  .testimonial-card,
+  .middle-testimonial,
+  .bottom-testimonial {
+    padding: 20px;
+  }
+}
