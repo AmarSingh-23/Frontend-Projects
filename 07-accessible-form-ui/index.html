@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible-Form-UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form action="#" method="post">
+            <div class="form-group" id="name">
+                <label for="full-name">Full Name </label>
+                <input type="text" name="username" placeholder="What you're name?" required>
+            </div>
+            <div class="form-group" id="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="example123@gmail.com" required>
+            </div>
+            <div class="form-group" id="pass">
+                <label for="password">Enter Password</label>
+                <input type="password" name="password" placeholder="xxxxxxxxxxxx">
+            </div> 
+            <div class="form-group" id="confirm">
+                <label for="confirm-password">Confirm</label>
+                <input type="password" name="confirm" placeholder="xxxxxxxxxxxx">
+            </div>
+            <div class="form-button" id="submit-button">
+                <button type="submit">Update Profile</button>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <span class="progress-percentage">65%</span>
+            </div>
+        <div class="form-footer">
+          <ul class="checklist">
+            <li>Create Account</li>
+            <li>Update Roadmap Progress</li>
+            <li>Setup Public Profile</li>
+            <li class="incomplete">Complete your first project</li>
+            <li class="incomplete">Invite your Friends</li>
+          </ul>
+        </div>
+        </form>
+    </div>
+</body>
+</html>
